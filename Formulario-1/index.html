@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Saúde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de Cadastro de Saúde</h1>
+    </header>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="dados_cadastro.php">Dados dos Pacientes</a>
+        <a href="desenvolvedores.html">Sobre o Sistema</a>
+    </nav>
+    <main>
+        <h2>Bem-vindo ao sistema de cadastro de saúde!</h2>
+        <p>Preencha o formulário abaixo para registrar suas informações de saúde.</p>
+        <form action="processa.php" method="post">
+            <input type="text" name="nome" placeholder="Nome completo" required>
+            <input type="email" name="email" placeholder="E-mail" required>
+            <input type="tel" name="telefone" placeholder="Telefone" required>
+            <input type="date" name="data_nascimento" placeholder="Data de Nascimento" required>
+            <input type="number" name="idade" placeholder="Idade" required>
+            <input type="text" name="cpf" placeholder="CPF" required>
+            <input type="text" name="endereco" placeholder="Endereço" required>
+            <input type="text" name="tipo_sanguineo" placeholder="Tipo Sanguíneo" required>
+            <input type="radio" name="genero" value="masculino" required> Masculino
+            <input type="radio" name="genero" value="feminino" required> Feminino
+            <input type="radio" name="genero" value="outro" required> Outro
+            <input type="text" name="alergias" placeholder="Alergias (se houver)">
+            <input type="text" name="doencas_preexistentes" placeholder="Doenças Preexistentes">
+            <input type="checkbox" name="termos" required> Confirmo que as informações fornecidas são verdadeiras
+            <input type="submit" value="Cadastrar">
+            <input type="reset" value="Limpar">
+        </form>
+    </main>
+    <footer>
+        <ul>
+            <li>IFRN Campus Santa Cruz</li>
+            <li>Sistema de Cadastro de Saúde</li>
+            <li>Prof. Marcelo Figueiredo Barbosa Júnior</li>
+            <li>Alunos: Mariana Ferreira e Miguel Alencar</li>
+        </ul>
+    </footer>
+</body>
+</html>
